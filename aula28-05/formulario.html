@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="css/styleForms.css">
+</head>
+
+<body>
+    <form id="meuFormulario">
+
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" placeholder="Digite seu nome">
+
+        <label for="idade">Idade:</label>
+        <input type="number" id="idade" name="idade" placeholder="Digite sua idade">
+
+        <label for="mensagem">Por que você quer se juntar ao clube?</label>
+        <textarea id="mensagem" name="mensagem" placeholder="Escreva uma mensagem"></textarea>
+
+        <label for="aventura">Aventura favorita:</label>
+        <select name="aventura" id="aventura">
+            <option value="explorar_floresta">Explorar floresta</option>
+            <option value="mergulho">Mergulho</option>
+            <option value="escalada">Escalada</option>
+        </select>
+
+        <button type="submit">Enviar</button>
+
+    </form>
+
+    <script>
+
+        const form = document.getElementById('meuFormulario');
+
+        form.addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const nome = document.getElementById('nome').value;
+            const idade = document.getElementById('idade').value;
+            const mensagem = document.getElementById('mensagem').value;
+            const aventura = document.getElementById('aventura').value;
+
+            window.location.href = `resultado.html?
+    &nome=${encodeURIComponent(nome)}&idade=${encodeURIComponent(idade)}&mensagem=${encodeURIComponent(mensagem)}&aventura=${encodeURIComponent(aventura)}`;
+        });
+
+    </script>
+
+</body>
+
+</html>
