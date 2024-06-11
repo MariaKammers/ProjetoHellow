@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+
+    <style>
+        body {
+            background-image:linear-gradient(to right, #b4c5e0, #8aadd4) ;
+        }
+
+
+        p,
+        bdo {
+            text-align: center;
+            font-size: 30px;
+        }
+
+        table,
+        th,
+        td {
+            border: solid 1px #000;
+            border-collapse: collapse;
+            margin-left: auto;
+            margin-right: auto;
+            width: 40%;
+            margin-bottom: 20px;
+        }
+
+        th {
+            text-align: left;
+        }
+
+        td,
+        th {
+            padding-top: 10px;
+            padding-bottom: 20px;
+            padding-left: 30px;
+            padding-right: 40px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <p>O <abbr title="World Health Organizatio ">WHO</abbr> foi fundado em 1948.</p>
+
+    <bdo dir="rtl">Este texto está sendo exibido da direita para a esquerda.</bdo>
+
+    <table>
+
+        <tr>
+            <th>Nome:</th>
+            <td>Maria</td>
+            <td>João</td>
+            <td>Fernanda</td>
+        </tr>
+        <tr>
+            <th>sobrenome</th>
+            <td>lima</td>
+            <td>Pereira</td>
+            <td>Souza</td>
+        </tr>
+        <tr>
+            <th>Idade:</th>
+            <td>20</td>
+            <td>45</td>
+            <td>10</td>
+        </tr>
+
+    </table>
+
+    <!--Tabela com cabeçalho com duas colunas-->
+
+    <table>
+
+        <tr>
+            <th colspan="2">Nome:</th>
+            <th>Idade</th>
+        </tr>
+        <tr>
+            <td>Maria</td>
+            <td>lima</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <td>João</td>
+            <td>Fernandes</td>
+            <td>30</td>
+        </tr>
+
+    </table>
+
+    <!--Tabela com legenda-->
+
+    <table>
+
+        <caption>Estações do ano</caption>
+        <tr>
+            <th>Inverno</th>
+            <th>Verão</th>
+        </tr>
+        <tr>
+            <td>Junho</td>
+            <td>Julho</td>
+        </tr>
+        <tr>
+            <td>Dezembro</td>
+            <td>Janeiro</td>
+        </tr>
+
+    </table>
+
+    <!--Tabela com linhas-->
+
+    <table>
+
+        <tr>
+            <th>Nome</th>
+            <td>Jill</td>
+        </tr>
+        <tr>
+            <th rowspan="2" >Telefone</th>
+            <td>555-1234</td>
+        </tr>
+        <tr>
+            <td>555-8743</td>
+        </tr>
+
+    </table>
+
+    <!--Tabela com fundo diferente-->
+
+    <table>
+
+        <colgroup>
+            <col span="2" style="background-color: #3b5777;">
+        </colgroup>
+
+        <tr>
+            <td>Segunda</td>
+            <td>Terça</td>
+            <td>Quarta</td>
+            <td>Quinta</td>
+            <td>Sexta</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+        </tr>
+
+    </table>
+
+</body>
+
+</html>

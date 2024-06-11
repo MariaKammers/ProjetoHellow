@@ -1,0 +1,22 @@
+body{
+    background-image: linear-gradient(to left, #949bdd, #625988);
+    text-align: center;
+}
+
+p{
+    color: #8289c2;
+    background-color: rgb(102, 117, 167);
+    font-size: 40px;
+    font-family: "Montserrat", sans-serif;
+    border: solid 1px #3c435f;
+}
+
+h1{
+    color: #475174;
+    background-color: rgb(102, 117, 167);
+    font-size: 50px;
+    font-family: "Jacquard 12", system-ui;
+    font-weight: lighter;
+    border-radius: 20px;
+}
+
