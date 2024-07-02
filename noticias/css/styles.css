@@ -1,0 +1,19 @@
+.navbar-custom {
+    background-color: #a56287 !important;
+}
+#map{
+    height: 400px;
+    width: 100%;
+}
+
+p{
+    margin: 2px;
+}
+
+.card{
+    border: #a56287 solid 1px;
+    border-radius: 10px;
+}
+.card img{
+   border-radius: 10px 10px 0 0;
+}
