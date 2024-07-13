@@ -1,0 +1,37 @@
+
+/* Galeria */
+
+.imagemGaleria{
+    width: 360px;
+    border-radius: 5px 5px 0 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/** pagina inicial **/
+
+.fotoPerfil{
+    width: 350px;
+}
+
+/** filmes favoritos **/
+
+.filmes{
+    display: flex;
+    justify-content: center;
+}
+
+.card-img-top{
+    width: 500px;
+    height: 400px;
+}
+
+.card{
+    margin: 10px;
+}
+
+.tituloFilmes{
+    font-size: 40px;
+    text-align: center;
+}
+
