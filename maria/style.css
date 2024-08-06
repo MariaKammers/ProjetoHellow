@@ -1,0 +1,132 @@
+
+
+.titulo{ 
+    text-align: center;
+    font-size: 50px; 
+    margin: 30px;
+}
+
+.container{
+    width: 900px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Define a aparência do contêiner da imagem */
+.image-container {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    margin: 15px;
+}
+
+/* Define a aparência da imagem */
+.image-container img {
+    display: block;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    width: 400px; /* Ajuste conforme necessário */
+    height: 300px; /* Ajuste conforme necessário */
+}
+
+/* Efeito quando o cursor passa sobre a imagem */
+.image-container:hover img {
+    transform: scale(1.1); /* Aumenta a imagem */
+    filter: brightness(50%); /* Escurece a imagem */
+}
+
+/* Define a aparência do texto sobre a imagem */
+.text-overlay {
+    text-align: left;
+    position: absolute;
+    top: 70%;
+    left: 20px;
+    transition: translate(-50%, -50%);
+    color: white; /* Ajuste a cor do texto conforme necessário */
+    font-size: 24px; /* Ajuste o tamanho da fonte conforme necessário */
+    pointer-events: none; /* Garante que o texto não interfira no hover da imagem */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+}
+.data{
+    font-size: 15px;
+}
+
+
+/*filto*/
+
+.filter-buttons {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.filter-btn {
+    background-color: #5f948b;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    transition: 1s
+}
+
+.filter-btn:hover {
+    background-color: #446963;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-right: 250px;
+    margin-left: 250px;
+}
+
+.gallery-item {
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    display: none;
+}
+
+.gallery-item p {
+    margin: 10px 0 0;
+}
+
+/* Infomações do evento */
+
+.fundo{
+    height: 400px;
+    width: 100%;
+    background-size: cover;
+}
+.imgEvento{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRF7-cZuC8tUnwZQucHcOFs17UF8vuvqdfmRA&s);
+    height: 410px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 0 0 20px 20px;
+}
+.descricaoEvento{
+    display: flex;
+    justify-content: space-around;
+}
+.textoEvento{
+    width: 570px;
+    margin-left: 30px;
+}
+.tituloEvento{
+    margin: 20px 20px 5px 0;
+}
+.subTituloEvento{
+    color: #5f948b;
+}
+.informacoes{
+    margin-top: 40px;
+    width: 500px;
+    background-color: #d3d3d3;
+    border-radius: 20px;
+    padding: 10px;
+}
+.redesSociais{
+    margin: 8px;
+}
+
